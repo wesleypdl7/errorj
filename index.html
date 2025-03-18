@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>👩🏻‍❤️‍💋‍👨🏼Meu Amor👩🏻‍❤️‍💋‍👨🏼</title>
+    <!-- Link para Google Fonts (Dancing Script e Playfair Display para fontes elegantes) -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #f9f0f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            /* Remover a propriedade overflow: hidden para permitir rolagem */
+        }
+        header {
+            background-color: #f5a3a6;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid #ff80ab;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        header p {
+            font-size: 1.6em;
+            font-style: italic;
+            color: #fff;
+            margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        /* Estilos das abas */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .tab-button {
+            background-color: #fff;
+            border: 2px solid #f5a3a6;
+            color: #f5a3a6;
+            padding: 15px 30px;
+            margin: 0 15px;
+            cursor: pointer;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5em;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tab-button:hover {
+            background-color: #f5a3a6;
+            color: #fff;
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .tab-button:active {
+            transform: scale(0.95);
+        }
+        .tab-content {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .tab-content img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .tab-content img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .active-tab {
+            display: block;
+        }
+        .footer {
+            background-color: #f5a3a6;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.3em;
+            font-family: 'Dancing Script', cursive;
+            border-top: 3px solid #ff80ab;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer p {
+            margin: 0;
+        }
+        /* Estilos dos corações flutuantes */
+        .heart {
+            position: absolute;
+            font-size: 2em;
+            color: #ff80ab;
+            opacity: 0.8;
+            animation: float 6s linear infinite; /* Contínuo e suave */
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0);
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg); /* Sobe até fora da tela */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meu Amor❤️</h1>
+    <p>Feliz nosso segundo mês de namoro, Minha Princesa! ❤️</p>
+</header>
+
+<!-- Abas -->
+<div class="tabs">
+    <button class="tab-button" onclick="openTab('tab1')">para voce😘</button>
+    <button class="tab-button" onclick="openTab('tab2')">Minha Princesa👑</button>
+    <button class="tab-button" onclick="openTab('tab3')">de coração❤️</button>
+</div>
+
+<!-- Conteúdo das abas -->
+<div class="tab-content" id="tab1">
+    <img src="https://cdn.pensador.com/img/imagens/pe/ns/pensador_2_meses_de_namoro_01_hoje_celebramos.jpg?auto_optimize=low&width=655" alt="Celebrando nosso amor" />
+</div>
+<div class="tab-content" id="tab2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe0lENErZEqcADdqmQqxywKV51b-g6tLor-g&s" alt="Minha namorada" />
+</div>
+<div class="tab-content" id="tab3">
+    <img src="https://textinhos.com/wp-content/uploads/2024/04/textinhos-para-namorada-7-jpg.webp" alt="Amor em cada gesto" />
+</div>
+
+<footer class="footer">
+    <p>Para você, meu maior bem ❤️</p>
+</footer>
+
+<script>
+    // Função para abrir uma aba
+    function openTab(tabId) {
+        // Esconde todas as abas
+        var tabContents = document.querySelectorAll('.tab-content');
+        tabContents.forEach(function(content) {
+            content.classList.remove('active-tab');
+        });
+
+        // Exibe a aba correspondente
+        var activeTab = document.getElementById(tabId);
+        activeTab.classList.add('active-tab');
+    }
+
+    // Função para gerar corações flutuantes automaticamente
+    function createHearts() {
+        const numHearts = 20; // Aumenta o número de corações
+        for (let i = 0; i < numHearts; i++) {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.textContent = '❤️';
+            
+            // Posição aleatória na tela
+            heart.style.left = `${Math.random() * window.innerWidth}px`;
+            heart.style.top = `${Math.random() * window.innerHeight}px`;
+
+            document.body.appendChild(heart);
+
+            // Remover o coração após a animação
+            setTimeout(() => {
+                heart.remove();
+            }, 6000); // Após 6 segundos, corações são removidos
+        }
+    }
+
+    // Chama a função para criar os corações no início
+    setInterval(createHearts, 2000); // Gera corações a cada 2 segundos
+
+    // Abre a primeira aba por padrão
+    openTab('tab1');
+</script>
+
+</body>
+</html>
